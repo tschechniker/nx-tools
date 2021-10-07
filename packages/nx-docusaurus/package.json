@@ -1,6 +1,6 @@
 {
   "name": "@nx-tools/nx-docusaurus",
-  "version": "0.0.5",
+  "version": "0.0.20",
   "author": "gperdomor",
   "repository": "https://github.com/gperdomor/nx-tools",
   "bugs": "https://github.com/gperdomor/nx-tools/issues",

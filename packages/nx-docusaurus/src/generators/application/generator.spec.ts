@@ -1,10 +1,9 @@
+import { readProjectConfiguration, Tree } from '@nrwl/devkit';
 import { createTreeWithEmptyWorkspace } from '@nrwl/devkit/testing';
-import { Tree, readProjectConfiguration } from '@nrwl/devkit';
-
 import generator from './generator';
 import { NxDocusaurusGeneratorSchema } from './schema';
 
-describe('nx-docusaurus generator', () => {
+describe('application generator', () => {
   let appTree: Tree;
   const options: NxDocusaurusGeneratorSchema = { name: 'test' };
 
