@@ -23,6 +23,7 @@
     "@actions/github": "5.0.0",
     "@commitlint/cli": "13.2.0",
     "@commitlint/config-conventional": "13.2.0",
+    "@docusaurus/core": "2.0.0-beta.6",
     "@jscutlery/semver": "2.8.1",
     "@nrwl/cli": "12.9.0",
     "@nrwl/devkit": "12.9.0",

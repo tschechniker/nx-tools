@@ -5,6 +5,8 @@
     "core": "packages/core",
     "docker-metadata": "packages/docker-metadata",
     "nx-docker": "packages/nx-docker",
+    "nx-docusaurus": "packages/nx-docusaurus",
+    "nx-docusaurus-e2e": "packages/nx-docusaurus-e2e",
     "nx-prisma": "packages/nx-prisma"
   },
   "cli": {

@@ -1,0 +1,16 @@
+{
+  "root": "packages/nx-docusaurus-e2e",
+  "projectType": "application",
+  "sourceRoot": "packages/nx-docusaurus-e2e/src",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/nx-plugin:e2e",
+      "options": {
+        "target": "nx-docusaurus:build",
+        "jestConfig": "packages/nx-docusaurus-e2e/jest.config.js"
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["nx-docusaurus"]
+}

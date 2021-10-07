@@ -1,0 +1,56 @@
+{
+  "root": "packages/nx-docusaurus",
+  "sourceRoot": "packages/nx-docusaurus/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/nx-docusaurus/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/nx-docusaurus"],
+      "options": {
+        "jestConfig": "packages/nx-docusaurus/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "build": {
+      "executor": "@nrwl/node:package",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/nx-docusaurus",
+        "tsConfig": "packages/nx-docusaurus/tsconfig.lib.json",
+        "packageJson": "packages/nx-docusaurus/package.json",
+        "main": "packages/nx-docusaurus/src/index.ts",
+        "assets": [
+          "packages/nx-docusaurus/*.md",
+          {
+            "input": "./packages/nx-docusaurus/src",
+            "glob": "**/!(*.ts)",
+            "output": "./src"
+          },
+          {
+            "input": "./packages/nx-docusaurus/src",
+            "glob": "**/*.d.ts",
+            "output": "./src"
+          },
+          {
+            "input": "./packages/nx-docusaurus",
+            "glob": "generators.json",
+            "output": "."
+          },
+          {
+            "input": "./packages/nx-docusaurus",
+            "glob": "executors.json",
+            "output": "."
+          }
+        ]
+      }
+    }
+  },
+  "tags": []
+}
