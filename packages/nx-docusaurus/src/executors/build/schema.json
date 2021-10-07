@@ -1,9 +1,24 @@
 {
   "$schema": "http://json-schema.org/schema",
   "cli": "nx",
-  "title": "Build executor",
+  "title": "Docusaurus Build executor",
   "description": "",
   "type": "object",
-  "properties": {},
-  "required": []
+  "properties": {
+    "bundleAnalyzer": {
+      "type": "boolean",
+      "description": "Analyze your bundle with the webpack bundle analyzer.",
+      "default": false
+    },
+    "outputPath": {
+      "type": "string",
+      "description": "The full path for the new output directory, relative to the current workspace."
+    },
+    "minify": {
+      "type": "boolean",
+      "description": "Build website without minimizing JS/CSS bundles..",
+      "default": true
+    }
+  },
+  "required": ["outputPath"]
 }

@@ -1,7 +1,15 @@
 {
   "name": "@nx-tools/nx-docusaurus",
-  "version": "0.0.1",
+  "version": "0.0.5",
+  "author": "gperdomor",
+  "repository": "https://github.com/gperdomor/nx-tools",
+  "bugs": "https://github.com/gperdomor/nx-tools/issues",
+  "license": "MIT",
   "main": "src/index.js",
   "generators": "./generators.json",
-  "executors": "./executors.json"
+  "executors": "./executors.json",
+  "dependencies": {
+    "@docusaurus/core": "^2.0.0-beta.6",
+    "@nx-tools/core": "^2.0.0-alpha.1"
+  }
 }
